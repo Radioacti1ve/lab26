@@ -73,7 +73,7 @@ void mergeSort(Stack *stack) {
 // Вывод содержимого стека
 void printStack(Stack stack) {
     printf("Содержимое стека: ");
-    for (int i = stack.top; i >= 0; i--)
+    for (int i = stack.top; i >= 0; --i)
         printf("%d ", stack.data[i]);
     printf("\n");
 }
