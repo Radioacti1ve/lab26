@@ -56,7 +56,7 @@ void mergeSort(Stack *stack) {
     Stack rightStack = createStack(stack->size - stack->size / 2);
 
     while (stack->top >= 0) {
-        if (leftStack.top < leftStack.size / 2)
+        if (leftStack.top < stack->size / 2)
             push(&leftStack, pop(stack));
         else
             push(&rightStack, pop(stack));
